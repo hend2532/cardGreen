@@ -1,0 +1,99 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body{
+   background-color: antiquewhite;
+   width: 100%;
+}
+.parent{
+   display: flex;
+   width: 500px;
+   margin-right: auto;
+   flex-wrap: wrap;
+   justify-content: center;
+   max-width: 100%;
+   margin-top: 40px;
+   margin-left: auto;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+img{
+   width: 250px;
+   flex-basis: 50%;
+   height: 100%;
+}
+.section{
+   width: 250px;
+   flex-basis: 50%;
+   background-color: white;
+}
+.one{
+   color: #bbb;
+   font-size: 13px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   letter-spacing: 5px;
+   margin-bottom:10px ;
+   text-transform: uppercase;
+   padding:10px 15px;
+   height: auto;
+}
+.two{
+   padding:5px 10px;
+}
+.three{
+   color: #bbb;
+   font-size: 15px;
+   padding: 10px 15px;
+}
+.four{
+   color:rgb(43, 107, 65);
+   font-size: 40px;
+   font-weight: bold;
+   margin-left: 10px;
+}
+.four del{
+   color: #bbb;
+   font-size: 15px;
+   padding: 10px 15px;
+}
+.five{
+   background-color: rgb(43, 107, 65);
+   color: white;
+   width: fit-content;
+   padding: 10px;
+   text-align: center;
+   margin-left: 30%;
+   margin-top: 20px;
+   border-radius: 5px;
+}
+.five:hover{
+   background-color:  rgb(34, 76, 48);
+}
+.five img{
+   width: 16px;
+}
+@media (max-width:767px){
+   img{
+      flex-basis: 100%;
+      width: 100%;
+   }
+   /* .parent img:first-of-type{
+      margin-bottom: -200px;
+      overflow: hidden;
+   } */
+   .parent{
+      flex-direction: column;
+      justify-content: center;
+      max-width: 100%;
+      padding: 20px;
+      /* margin: 0; */
+   }
+   .section{
+      padding-bottom: 20px;
+      width: fit-content;
+      /* height: 500px; */
+   }
+}
